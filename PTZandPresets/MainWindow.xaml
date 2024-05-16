@@ -19,7 +19,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <platformUiControls:VideoOSButtonPrimaryMedium Grid.Column="0" Grid.Row="0" Content="{Binding Path=CameraName}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="10" Click="SelectCameraClicked" />
-        <platformUiControls:VideoOSDropDownMedium Grid.Column="2" Grid.Row="0" Margin="10" IsEnabled="{Binding Path=CameraSelected}" ItemsSource="{Binding Path=CameraSequences}" ItemDataPropertyName="StartDateTime" SelectedItemChanged="SequenceSelectionChanged" />
         <platformClient:ImageViewerWpfControl x:Name="_imageViewer" Grid.Column="0" Grid.Row="1" Margin="10"/>
         <Grid Grid.Column="1" Grid.Row="1" Margin="10">
             <Grid.RowDefinitions>
